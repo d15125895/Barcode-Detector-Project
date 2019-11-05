@@ -8,9 +8,7 @@ while(cap.isOpened()):
   # Read frame by frame 
   ret, img = cap.read()
 
-  gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-
-  decoded = pyzbar.decode(gray)
+  decoded = pyzbar.decode(img)
 
   for d in decoded: 
     # These are used to store the location of detected barcode or QR code
@@ -29,7 +27,7 @@ while(cap.isOpened()):
     text = Data + ' [' + Type + ']'
 
     # putText function
-    cv2.putText(img, text, (x, y-10), cv2.FONT_HERSHEY_PLAIN, 2, (255, 255, 255), 1)
+    cv2.putText(img, text, (x, y-10), cv2.FONT_HERSHEY_PLAIN, 2, (0, 0, 255), 2)
 
   cv2.imshow('img', img)
 
