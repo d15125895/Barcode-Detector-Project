@@ -38,5 +38,10 @@ while(cap.isOpened()):
     if key == ord('q'):
         break
 
+    # Press 'o' to open the website based on the above Data variable
+    if key == ord('o') and Type == 'QRCODE':
+        web.open(Data)
+        break
+
 cap.release()
 cv2.destroyAllWindows()
