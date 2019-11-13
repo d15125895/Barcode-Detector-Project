@@ -1,5 +1,6 @@
 import pyzbar.pyzbar as pyzbar
 import cv2 
+import webbrowser as web
 
 cap = cv2.VideoCapture(0)
 
