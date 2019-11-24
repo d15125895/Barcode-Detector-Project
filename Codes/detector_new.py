@@ -1,6 +1,9 @@
-# Project - Barcode Detector
-# D17123466
-# Seungki Jeong
+## Project - Barcode Detector
+
+## D15125895 FAISAL ALGAHTANI​
+## D17123466 SEUNGKI JEONG
+## D15125709 ABDULAZIZ ALJABRI 
+
 
 #################################################################################################################################
 ## Introduction
